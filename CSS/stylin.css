@@ -1,0 +1,160 @@
+body {
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heroimg {
+    background-image: url('../Static/hero.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    height: 50vh;
+    width: 100%; 
+    margin: 0;
+}
+
+.header-section {
+    background-color: rgba(255, 255, 243, 0.765); 
+    color: #121212;
+    font-size: 1.5vw;
+}
+
+.header-section h3 {
+    font-family: "Carattere", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+}
+
+.header-section a {
+    text-decoration: none;
+    color: #121212;
+}
+
+.flowers {
+    color: #E5489C;
+}
+
+.search-bar {
+    background-color: rgba(255, 255, 243, 0.765); 
+    padding: 1%; 
+}
+
+input[type=text] {
+    border: 2px solid #E5489C;
+    border-radius: 4px;
+    padding: 3px; 
+}
+
+.fa {
+    color: white;
+}
+
+button {
+    background-color: #E5489C;
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 4px; 
+}
+
+.input-group-append .btn {
+    background-color: #E5489C;
+    color: white; 
+    border: none; 
+    padding: 5px 5px;
+    cursor: pointer; 
+    border-radius: 4px; 
+}
+
+.features {
+    background-color: #FFECF7;
+    margin-top: -14px; /* Move the feature section up */
+}
+
+.feature-box {
+    width: 18vw;
+    height: 18vw;
+    background-color: #E5489C;
+    color: white;
+    border-radius: 16px;
+}
+
+.feature-box i {
+    font-size: 8vw;
+}
+
+.beer-box {
+    position: relative;
+}
+
+.beer-box p {
+    z-index: 2;
+    position: relative;
+    font-size: small;
+    text-align: center; 
+    margin: 10px; 
+}
+
+.beer-bg {
+    color: #de80b2;
+    position: absolute;
+    z-index: 1; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.beer-bg .fa {
+    color: #de80b2;
+}
+
+.flavor-img {
+    width: 25vw; 
+    height: auto;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+    .header-section h3 {
+        font-size: 10vw;
+    }
+
+    .nav .nav-link {
+        font-size: 4.5vw;
+    }
+
+    .heroimg {
+        background-size: cover; 
+        height: 40vh; 
+    }
+
+    .login-bttn {
+        padding: 13px 27px;
+        font-size: 5vw; 
+    }
+
+    .features {
+        margin-top: -30px; /* Adjust for mobile screens */
+    }
+
+    .feature-box {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .feature-box i {
+        font-size: 20vw;
+    }
+
+    .flavor-img {
+        width: 80%; /* Adjust the flavor image size for mobile screens */
+    }
+}
+
+/* Media query for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .beer-box p {
+        font-size: x-small;
+    }
+}
