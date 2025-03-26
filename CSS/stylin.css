@@ -69,7 +69,7 @@ button {
 
 .features {
     background-color: #FFECF7;
-    margin-top: -14px; /* Move the feature section up */
+    margin-top: -120px;
 }
 
 .feature-box {
@@ -112,6 +112,30 @@ button {
 .flavor-img {
     width: 25vw; 
     height: auto;
+    border: solid 5px #E5489C;
+}
+
+.dot {
+    height: 40px;
+    width: 40px;
+    background-color: #fc97cd;
+    border-radius: 50%;}
+
+footer {
+    background-color: #E5489C;
+    color: white;
+}
+
+footer p {
+    color: #de80b2;
+}
+
+.copyr {
+    color: white;
+}
+
+footer .fa {
+    color: white;
 }
 
 /* Media query for mobile screens */
@@ -135,7 +159,7 @@ button {
     }
 
     .features {
-        margin-top: -30px; /* Adjust for mobile screens */
+        margin-top: -30px;
     }
 
     .feature-box {
@@ -148,13 +172,34 @@ button {
     }
 
     .flavor-img {
-        width: 80%; /* Adjust the flavor image size for mobile screens */
+        width: 80%; 
+    }
+
+    footer .row {
+        text-align: center; /* Center the divs in the footer */
+    }
+
+    footer .col-12 {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
 }
 
-/* Media query for tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
     .beer-box p {
         font-size: x-small;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .features {
+        margin-top: -270px;
+        font-size: 160%;
+    }
+
+    .beer-box p {
+        font-size: 60%;
     }
 }
